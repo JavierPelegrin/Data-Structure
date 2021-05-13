@@ -9,11 +9,13 @@ ifeq ($(DEBUG),yes)
 endif
 
 $(EXEC) : ./obj/$(OBJS)
-	mkdir -p obj
 	@$(CC) $(CFLAGS) $^ -o $@
 	@mv *.o ./obj
+	@mkdir -p bin
+	@mv $(EXEC) ./bin
 
 ./obj/%.o : %.c
+	@mkdir -p obj
 	@$(CC) -c $(CFLAGS) $< -o $@
 
 main.o : $(OBJS)
