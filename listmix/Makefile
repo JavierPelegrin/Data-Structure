@@ -1,6 +1,6 @@
 CC=gcc
 EXEC=main
-OBJS=main.o bstree.o
+OBJS=main.o trie.o
 CFLAGS=-std=c99 -lm -Wextra -Wall -Werror -pedantic
 
 ifeq ($(DEBUG),yes)
@@ -9,6 +9,7 @@ ifeq ($(DEBUG),yes)
 endif
 
 $(EXEC) : ./obj/$(OBJS)
+	mkdir -p obj
 	@$(CC) $(CFLAGS) $^ -o $@
 	@mv *.o ./obj
 

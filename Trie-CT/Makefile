@@ -9,6 +9,7 @@ ifeq ($(DEBUG),yes)
 endif
 
 $(EXEC) : ./obj/$(OBJS)
+	mkdir -p obj
 	@$(CC) $(CFLAGS) $^ -o $@
 	@mv *.o ./obj
 
