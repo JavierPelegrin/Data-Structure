@@ -1,6 +1,6 @@
 CC=gcc
 EXEC=main
-OBJS=main.o trie.o
+OBJS=main.o bstree.o
 CFLAGS=-std=c99 -lm -Wextra -Wall -Werror -pedantic
 
 ifeq ($(DEBUG),yes)
@@ -21,6 +21,6 @@ $(EXEC) : ./obj/$(OBJS)
 main.o : $(OBJS)
 
 clean:
-	rm -fr ./obj/*.o $(EXEC)
+	rm -fr ./obj ./bin
 clear:
-	rm -fr $(EXEC)
+	rm -fr ./bin/$(EXEC)

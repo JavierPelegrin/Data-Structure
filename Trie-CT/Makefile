@@ -21,6 +21,6 @@ $(EXEC) : ./obj/$(OBJS)
 main.o : $(OBJS)
 
 clean:
-	rm -fr ./obj/*.o $(EXEC)
+	rm -fr ./obj ./bin
 clear:
-	rm -fr $(EXEC)
+	rm -fr ./bin/$(EXEC)

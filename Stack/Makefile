@@ -1,6 +1,6 @@
 CC=gcc
 EXEC=main
-OBJS=main.o list.o queue.o
+OBJS=main.o staticStack.o
 CFLAGS=-std=c99 -lm -Wextra -Wall -Werror -pedantic
 
 ifeq ($(DEBUG),yes)
