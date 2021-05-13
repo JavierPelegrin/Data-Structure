@@ -21,7 +21,6 @@ Las `listas` son una implementacion de la mezcla entre las `listas staticas` y l
 
 Los elementos dentro de la lista dinamica son exclusivamente listas estaticas de hasta `16` elementos en su interior.
 
-|       |      |      |      |       |
 | ----- | ---- | ---- | ---- | ----- |
 |   3   |      |  5   |      |   3   |
 |   1   |      |  2   |      |   4   |
