@@ -1,8 +1,7 @@
 CC=gcc
 EXEC=main
-OBJS=main.o queue.o list.o
-INCS=./inc
-CFLAGS=-std=c99 -lm -Wextra -Wall -Werror -pedantic -I$(INCS)
+OBJS=main.o bstree.o
+CFLAGS=-std=c99 -lm -Wextra -Wall -Werror -pedantic
 
 ifeq ($(DEBUG),yes)
 	CFLAGS += -g
@@ -10,17 +9,15 @@ ifeq ($(DEBUG),yes)
 endif
 
 $(EXEC) : ./obj/$(OBJS)
-	@$(CC) $(CFLAGS) $^ -o ./bin/$@
+	@$(CC) $(CFLAGS) $^ -o $@
 	@mv *.o ./obj
 
 ./obj/%.o : %.c
-	@mkdir -p bin obj
 	@$(CC) -c $(CFLAGS) $< -o $@
 
 main.o : $(OBJS)
 
 clean:
-	rm -fr ./obj/*.o ./bin/$(EXEC)
-	mv $(INCS)/*.h .
+	rm -fr ./obj/*.o $(EXEC)
 clear:
 	rm -fr $(EXEC)
