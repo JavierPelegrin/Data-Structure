@@ -29,3 +29,4 @@ Los elementos dentro de la lista dinamica son exclusivamente listas estaticas de
 |   2   |      |  6   |      |   9   |
 |  --   |      |  --  |      |  --   |
 | elem1 | <--> | elm2 | <--> | elem3 |
+
