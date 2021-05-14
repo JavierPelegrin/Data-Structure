@@ -37,10 +37,12 @@ Esta es una estructura recursiva, esta compuesta de nodos reliados entre ellos c
 ### Définiciones
 - Un arbol es dicho **completo** si todos sus nodos tienen o **0** o **dos** hijos
 - Un arbol es dicho **degenerado** si todos sus nodos tienen **1** hijo
-- Un arbol es dicho **equilibrado** si todos la profundidad de todas sus `hojas` es la misma e igual a la altura del arbol. Para un arbol de ariedad `b` (en este caso 2) y `N` nodos, la profundidad es
- 
+- Un arbol es dicho **equilibrado** si todos la profundidad de todas sus `hojas` es la misma e igual a la altura del arbol. Para un arbol de ariedad `b` (en este caso 2) y `N` nodos, la profundidad es:
+
 $$
+
 p = log_b(N) 
+
 $$
 
 ## Trie
