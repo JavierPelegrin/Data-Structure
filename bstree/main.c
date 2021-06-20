@@ -13,7 +13,7 @@ int main(){
             n = rand()%100;
         }
         bstree_add(&t, n);
-        printf("i=%d n=%d\n",i,n);
+        printf("i = %d, n = %d\n",i,n);
     }
 
     for(int i= 0; i<100;i++){

@@ -12,24 +12,23 @@ int main(){
     }
 
 
-    trie_addKey(&t, "javi\0");
 
 
     if (trie_isEmpty(t) || !trie_Search(t,"javi\0")){
         fprintf(stderr,"[ERR] - trie_addKey faild: \"javi\"\n");
-        exit(1);
+        exit(2);
     }
     if (trie_Search(t,"avi\0")) {
         fprintf(stderr,"[ERR] - trie_addKey faild \"avi\"\n");
-        exit(1);
+        exit(3);
     }
     if (!trie_Search(t,"jav\0")) {
         fprintf(stderr,"[ERR] - trie_addKey faild: \"jav\"\n");
-        exit(1);
+        exit(4);
     }
     if (trie_Search(t,"vi\0")) {
         fprintf(stderr,"[ERR] - trie_addKey faild: \"vi\"\n");
-        exit(1);
+        exit(5);
     }
 
 
@@ -39,32 +38,32 @@ int main(){
 
     if (!trie_Search(t,"examenes\0")) {
         fprintf(stderr,"[ERR] - trie_addKey faild: \"examenes\"\n");
-        exit(1);
+        exit(6);
     }
     if (!trie_Search(t,"jodido\0")) {
         fprintf(stderr,"[ERR] - trie_addKey faild: \"jodido\"\n");
-        exit(1);
+        exit(7);
     }
     if (!trie_Search(t,"jodi\0")) {
         fprintf(stderr,"[ERR] - trie_addKey faild: \"jodi\"\n");
-        exit(1);
+        exit(8);
     }
     if (!trie_Search(t,"exam\0")) {
         fprintf(stderr,"[ERR] - trie_addKey faild: \"exam\"\n");
-        exit(1);
+        exit(9);
     }
     if (trie_Search(t,"xam\0")) {
         fprintf(stderr,"[ERR] - trie_addKey faild: \"xam\"\n");
-        exit(1);
+        exit(10);
     }
 
     if (trie_SearchKey(t,"exam\0")) {
         fprintf(stderr,"[ERR] - trie_addKey faild: \"xam\"\n");
-        exit(2);
+        exit(11);
     }
     if (!trie_SearchKey(t,"jodido")) {
         fprintf(stderr,"[ERR] - trie_addKey faild: \"xam\"\n");
-        exit(3);
+        exit(12);
     }
 
     printf("DONE - Congratulations !!\n");

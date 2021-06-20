@@ -47,9 +47,9 @@ void listPushBack(List *l, int e){
         Element *e = malloc(sizeof(Element)); 
         e->q = queue;
         e->next = l->back;
-        if (l->size == 0) {
+        if (l->size == 0){
             l->front = e;
-        }else if(l->size != 0){
+        }else if (l->size != 0){
             l->back->prev = e; 
         }
         l->back = e;

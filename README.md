@@ -30,12 +30,13 @@ Los elementos dentro de la lista dinamica son exclusivamente listas estaticas de
 |  ---  |      |  ---  |      |  ---  |      |  ---  |
 | elem1 | <--> | elem2 | <--> | elem3 | <--> | elem4 |
 
+la lista dinamica esta doblemente encadenada enlazada de manera circular
 
 ## Binary Search Tree
 Los arboles de busqueda binarios es una implementacion de nivel medio.
 Esta es una estructura recursiva, esta compuesta de nodos reliados entre ellos con la relacion unica `padre-hijo` y tiene un nodo unico particular llamado `raiz`.
 ### Définiciones
-- Un arbol es dicho **completo** si todos sus nodos tienen o **0** o **dos** hijos
+- Un arbol es dicho **completo** si todos sus nodos tienen **0** o **dos** hijos
 - Un arbol es dicho **degenerado** si todos sus nodos tienen **1** hijo
 - Un arbol es dicho **equilibrado** si todos la profundidad de todas sus `hojas` es la misma e igual a la altura del arbol. Para un arbol de ariedad `b` (en este caso 2) y `N` nodos, la profundidad es: p = log_b(N) 
 
