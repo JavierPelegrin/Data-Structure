@@ -50,6 +50,22 @@ Existen dos tipos de nodos:
 
 Los nodos terminales son los que contienen el dato
 
+## Hashmap
+Los hashmap es una estructura de datos associativa (clave <-> dato) de tipo lista en la cual se asocia a cada dato una clave `hash` calculado en funcion de las informaciones dadas por el dato, la complejidad de busqueda en estas estructuras de datos es de `O(1)`. 
+### Funcion de Hash
+En este caso la informacion que se guarda en el hash es 
+```c
+struct info{
+    char name[N];
+    int age;
+}
+```
+El hash resultante es dado por la formula:
+$$
+(~\sum_{i=0}^{N} asciToInt(name[i])+i~)*age -(2*N)\\~\\
+Donde~N~es~Numero~de~caracteres~de~name
+$$
+modulo 200 en este caso.
 
 ## Auteurs du projet
 
