@@ -61,10 +61,12 @@ struct info{
 }
 ```
 El hash resultante es dado por la formula:
+```latex
 $$
 (~\sum_{i=0}^{N} asciToInt(name[i])+i~)*age -(2*N)\\~\\
 Donde~N~es~Numero~de~caracteres~de~name
 $$
+```
 modulo 200 en este caso.
 
 ## Auteurs du projet
