@@ -19,4 +19,6 @@ int listBack(const List *l);
 
 void printList(const List *l);
 
+int listSize(const List *l);
+
 #endif 

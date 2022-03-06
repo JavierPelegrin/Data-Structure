@@ -11,7 +11,7 @@ int main(){
         exit(1);
     }
 
-
+    trie_addKey(&t, "javi");
 
 
     if (trie_isEmpty(t) || !trie_Search(t,"javi\0")){
@@ -66,7 +66,7 @@ int main(){
         exit(12);
     }
 
-    printf("DONE - Congratulations !!\n");
+    printf("DONE\n");
 
     return 0;
 }
